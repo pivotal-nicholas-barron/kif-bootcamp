@@ -44,6 +44,6 @@ In order to complete this task of the bootcamp, you will need to create your fir
 - [KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
 
 ##### Objective:
-Add a test that selects a Pivot from the table view, and makes sure their job title and projects lead value is displayed in the detail view.
+Add a test that selects a Pivot from the table view, and makes sure their job title and projects leading value is displayed in the detail view.
 
 ##### Description:
