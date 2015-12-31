@@ -8,7 +8,7 @@ Fork this repo and request evaluation from ETT members experienced in developing
 
 Software:
 
-    * Xcode (Typically try to remain in step with the version that the dev team is using for the project you are automating)
+    * Xcode (Try to remain consistent with the version that the development team is using)
     * Cocoapods
     * KIF
     * Nocilla
