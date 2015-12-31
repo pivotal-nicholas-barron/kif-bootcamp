@@ -6,10 +6,10 @@ Fork this repo and request evaluation from ETT members experienced in developing
 
 Software:
 
-    * Xcode (Try to remain consistent with the version that the development team is using)
-    * Cocoapods
-    * KIF
-    * Nocilla
+- Xcode (Try to remain consistent with the version that the development team is using)
+- Cocoapods
+- KIF
+- Nocilla
 
 
 #KIF Basics
@@ -18,11 +18,10 @@ Software:
 
 ##### Useful  material and links: 
 
-[Objective-C Basics] (http://tryobjectivec.codeschool.com/levels/1)
-
-[Xcode Cheat Sheet] (http://www.git-tower.com/blog/xcode-cheat-sheet)
-[Cocoapods] (https://cocoapods.org/)
-[KIF Framework README] (https://github.com/kif-framework/KIF)
+- [Objective-C Basics] (http://tryobjectivec.codeschool.com/levels/1)
+- [Xcode Cheat Sheet] (http://www.git-tower.com/blog/xcode-cheat-sheet)
+- [Cocoapods] (https://cocoapods.org/)
+- [KIF Framework README] (https://github.com/kif-framework/KIF)
 
 
 ##### Objective:
