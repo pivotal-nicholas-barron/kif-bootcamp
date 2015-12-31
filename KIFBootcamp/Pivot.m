@@ -10,10 +10,14 @@
 
 @implementation Pivot
 
-- (instancetype)initWithName:(NSString *)name {
+- (instancetype)initWithName:(NSString *)name
+                    projects:(NSNumber *)projectsLeading
+                    jobTitle:(NSString *)jobTitle {
     Pivot *pivot = [super init];
     if (pivot) {
         pivot.fullName = name;
+        pivot.projectsLeading = projectsLeading;
+        pivot.jobTitle = jobTitle;
     }
     return pivot;
 }

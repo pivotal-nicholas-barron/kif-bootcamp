@@ -11,8 +11,12 @@
 @interface Pivot : NSObject
 
 @property (nonatomic, strong) NSString *fullName;
+@property (nonatomic, strong) NSNumber *projectsLeading;
+@property (nonatomic, strong) NSString *jobTitle;
 
-- (instancetype)initWithName:(NSString *)name;
+- (instancetype)initWithName:(NSString *)name
+                    projects:(NSNumber *)projectsLeading
+                    jobTitle:(NSString *)jobTitle;
 
 
 @end

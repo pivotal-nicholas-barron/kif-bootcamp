@@ -7,19 +7,22 @@
 //
 
 #import "DetailsViewController.h"
+#import "Pivot.h"
 
 @interface DetailsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *jobLabel;
+@property (weak, nonatomic) IBOutlet UILabel *projectsLabel;
 
 @end
 
 @implementation DetailsViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
+- (instancetype)init {
+    self = [super init];
     if (self) {
-        UITabBarItem *tab = self.tabBarItem;
-        tab.title = @"DETAILS TAB";
+        UINavigationItem *navItem = self.navigationItem;
+        navItem.title = @"DETAILS";
     }
     
     return self;
@@ -28,6 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.nameLabel.text = self.pivot.fullName;
+    self.jobLabel.text = self.pivot.jobTitle;
+    self.projectsLabel.text = [NSString stringWithFormat:@"%@", self.pivot.projectsLeading ];
 
     // Do any additional setup after loading the view from its nib.
 }

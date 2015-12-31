@@ -11,14 +11,12 @@
 		3D6BAE6D1C288447008AAF0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE6C1C288447008AAF0A /* AppDelegate.m */; };
 		3D6BAE751C288447008AAF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAE741C288447008AAF0A /* Assets.xcassets */; };
 		3D6BAE781C288447008AAF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAE761C288447008AAF0A /* LaunchScreen.storyboard */; };
-		3D6BAE871C288A33008AAF0A /* BootcampTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE851C288A33008AAF0A /* BootcampTableViewController.m */; };
-		3D6BAE881C288A33008AAF0A /* BootcampTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAE861C288A33008AAF0A /* BootcampTableViewController.xib */; };
 		3D6BAE8B1C28B10F008AAF0A /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE8A1C28B10F008AAF0A /* Constants.m */; };
 		3D6BAE8E1C28B354008AAF0A /* Pivot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE8D1C28B354008AAF0A /* Pivot.m */; };
-		3D6BAE941C29AD1B008AAF0A /* BootcampHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE921C29AD1B008AAF0A /* BootcampHomeViewController.m */; };
-		3D6BAE951C29AD1B008AAF0A /* BootcampHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAE931C29AD1B008AAF0A /* BootcampHomeViewController.xib */; };
 		3D6BAE991C29B4AD008AAF0A /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAE961C29B4AD008AAF0A /* DetailsViewController.xib */; };
 		3D6BAE9A1C29B4AD008AAF0A /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAE971C29B4AD008AAF0A /* DetailsViewController.m */; };
+		3D6BAEA41C32EAFA008AAF0A /* BootcampTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BAEA21C32EAFA008AAF0A /* BootcampTableViewController.m */; };
+		3D6BAEA51C32EAFA008AAF0A /* BootcampTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6BAEA31C32EAFA008AAF0A /* BootcampTableViewController.xib */; };
 		D2787351B732A525FF89B2D9 /* libPods-KIFBootcamp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1012512934A4CC3F4D0DE878 /* libPods-KIFBootcamp.a */; };
 /* End PBXBuildFile section */
 
@@ -32,19 +30,16 @@
 		3D6BAE741C288447008AAF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D6BAE771C288447008AAF0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D6BAE791C288447008AAF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D6BAE841C288A33008AAF0A /* BootcampTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootcampTableViewController.h; sourceTree = "<group>"; };
-		3D6BAE851C288A33008AAF0A /* BootcampTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootcampTableViewController.m; sourceTree = "<group>"; };
-		3D6BAE861C288A33008AAF0A /* BootcampTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootcampTableViewController.xib; sourceTree = "<group>"; };
 		3D6BAE891C28B10F008AAF0A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		3D6BAE8A1C28B10F008AAF0A /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		3D6BAE8C1C28B354008AAF0A /* Pivot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pivot.h; path = KIFBootcamp/Pivot.h; sourceTree = "<group>"; };
 		3D6BAE8D1C28B354008AAF0A /* Pivot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pivot.m; path = KIFBootcamp/Pivot.m; sourceTree = "<group>"; };
-		3D6BAE911C29AD1B008AAF0A /* BootcampHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootcampHomeViewController.h; sourceTree = "<group>"; };
-		3D6BAE921C29AD1B008AAF0A /* BootcampHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootcampHomeViewController.m; sourceTree = "<group>"; };
-		3D6BAE931C29AD1B008AAF0A /* BootcampHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootcampHomeViewController.xib; sourceTree = "<group>"; };
 		3D6BAE961C29B4AD008AAF0A /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		3D6BAE971C29B4AD008AAF0A /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		3D6BAE981C29B4AD008AAF0A /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		3D6BAEA11C32EAFA008AAF0A /* BootcampTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootcampTableViewController.h; sourceTree = "<group>"; };
+		3D6BAEA21C32EAFA008AAF0A /* BootcampTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootcampTableViewController.m; sourceTree = "<group>"; };
+		3D6BAEA31C32EAFA008AAF0A /* BootcampTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootcampTableViewController.xib; sourceTree = "<group>"; };
 		9039783EDFE37AABE8B9A952 /* Pods-KIFBootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFBootcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIFBootcamp/Pods-KIFBootcamp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,14 +88,11 @@
 				3D6BAE6C1C288447008AAF0A /* AppDelegate.m */,
 				3D6BAE891C28B10F008AAF0A /* Constants.h */,
 				3D6BAE8A1C28B10F008AAF0A /* Constants.m */,
+				3D6BAEA11C32EAFA008AAF0A /* BootcampTableViewController.h */,
+				3D6BAEA21C32EAFA008AAF0A /* BootcampTableViewController.m */,
+				3D6BAEA31C32EAFA008AAF0A /* BootcampTableViewController.xib */,
 				3D6BAE8F1C28B409008AAF0A /* Models */,
 				3D6BAE741C288447008AAF0A /* Assets.xcassets */,
-				3D6BAE911C29AD1B008AAF0A /* BootcampHomeViewController.h */,
-				3D6BAE921C29AD1B008AAF0A /* BootcampHomeViewController.m */,
-				3D6BAE931C29AD1B008AAF0A /* BootcampHomeViewController.xib */,
-				3D6BAE841C288A33008AAF0A /* BootcampTableViewController.h */,
-				3D6BAE851C288A33008AAF0A /* BootcampTableViewController.m */,
-				3D6BAE861C288A33008AAF0A /* BootcampTableViewController.xib */,
 				3D6BAE981C29B4AD008AAF0A /* DetailsViewController.h */,
 				3D6BAE971C29B4AD008AAF0A /* DetailsViewController.m */,
 				3D6BAE961C29B4AD008AAF0A /* DetailsViewController.xib */,
@@ -198,8 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6BAE881C288A33008AAF0A /* BootcampTableViewController.xib in Resources */,
-				3D6BAE951C29AD1B008AAF0A /* BootcampHomeViewController.xib in Resources */,
+				3D6BAEA51C32EAFA008AAF0A /* BootcampTableViewController.xib in Resources */,
 				3D6BAE991C29B4AD008AAF0A /* DetailsViewController.xib in Resources */,
 				3D6BAE781C288447008AAF0A /* LaunchScreen.storyboard in Resources */,
 				3D6BAE751C288447008AAF0A /* Assets.xcassets in Resources */,
@@ -261,13 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6BAEA41C32EAFA008AAF0A /* BootcampTableViewController.m in Sources */,
 				3D6BAE8E1C28B354008AAF0A /* Pivot.m in Sources */,
 				3D6BAE8B1C28B10F008AAF0A /* Constants.m in Sources */,
-				3D6BAE871C288A33008AAF0A /* BootcampTableViewController.m in Sources */,
 				3D6BAE6D1C288447008AAF0A /* AppDelegate.m in Sources */,
 				3D6BAE9A1C29B4AD008AAF0A /* DetailsViewController.m in Sources */,
 				3D6BAE6A1C288447008AAF0A /* main.m in Sources */,
-				3D6BAE941C29AD1B008AAF0A /* BootcampHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

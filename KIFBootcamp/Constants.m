@@ -14,6 +14,7 @@ NSString * const kParseClassPivot = @"QA_Pivots";
 //Parse Object Keys
 NSString * const kParseObjectID = @"objectID";
 NSString * const kPivotNameKey = @"pivot_name";
-
+NSString * const kPivotProjectsKey = @"projects_leading";
+NSString * const kPivotJobKey = @"job_title";
 
 @end

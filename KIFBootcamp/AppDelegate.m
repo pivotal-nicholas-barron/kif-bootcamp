@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "BootcampHomeViewController.h"
 #import "BootcampTableViewController.h"
 #import <Parse/Parse.h>
 #import "Constants.h"
@@ -27,13 +26,12 @@
     [Parse setApplicationId:@"8PlHrZk3tdNLbZvDBCN8bc2r4LIUF4AV1q30HkB6"
                   clientKey:@"2bh2Iai3LXplEKdUsSCH5IfeNN3XzBZ74g8t11Se"];
     
-    BootcampHomeViewController *hvc = [[BootcampHomeViewController alloc] init];
+    
     BootcampTableViewController *btvc = [[BootcampTableViewController alloc] init];
     
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, btvc];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:btvc];
     
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = navController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

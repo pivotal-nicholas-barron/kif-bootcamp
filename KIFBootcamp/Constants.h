@@ -14,5 +14,7 @@ extern NSString * const kParseClassPivot;
 //Parse Object Keys
 extern NSString * const kParseObjectID;
 extern NSString * const kPivotNameKey;
+extern NSString * const kPivotProjectsKey;
+extern NSString * const kPivotJobKey;
 
 @end
