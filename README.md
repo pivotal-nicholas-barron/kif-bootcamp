@@ -40,8 +40,8 @@ In order to complete this task of the bootcamp, you will need to create your fir
 
 ##### Useful  material and links: 
 
-[iOS Accessibility Inspector] (https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) 
-[KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
+- [iOS Accessibility Inspector] (https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) 
+- [KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
 
 ##### Objective:
 Add a test that selects a Pivot from the table view, and makes sure their job title and projects lead value is displayed in the detail view.
