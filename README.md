@@ -1,8 +1,6 @@
 # KIF-bootcamp
 
-This bootcamp serves as an introduction point into the KIF framework and other testing tools for iOS.
-
-It covers a majority of the common scenarios one might encounter while developing tests for iOS applications.
+This bootcamp serves as an introduction point into the KIF framework and other testing tools for iOS. It covers a majority of the common scenarios one might encounter while developing tests for iOS applications.
 
 Fork this repo and request evaluation from ETT members experienced in developing KIF tests.
 
