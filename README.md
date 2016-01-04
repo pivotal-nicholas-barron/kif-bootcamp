@@ -34,7 +34,7 @@ If you are new to Objective-C, I would recommend running through the Objective-C
 
 Follow the installation instructions from the KIF Framework README. We will be using Cocoapods to install KIF, so make sure you have the latest stable version installed on your machine. 
 
-In order to complete this task of the bootcamp, you will need to create your first test class and write a simple test.
+In order to complete this task you will need to create your first test class and write a simple test.
 
 ## Task #1: Exploring the KIF API
 
@@ -47,3 +47,22 @@ In order to complete this task of the bootcamp, you will need to create your fir
 Add a test that selects a Pivot from the table view, and makes sure their job title and projects leading value is displayed in the detail view.
 
 ##### Description:
+
+In order to complete this task you will need to create a new test class, and write a test that combines two of the core functions of KIF, waiting for a view to be visible, and tapping on a view.
+
+## Task #2: Adding accessibility labels
+
+##### Useful  material and links: 
+
+- [KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
+
+##### Objective:
+1. Add an accessibility label to the table view that contains the ETT Pivots
+2. Add an accessibility label to the text entry field in the details view
+3. Use your newly created accessibility labels to write a new test, one that loops through the the rows and taps on 
+
+##### Description:
+
+In order to complete this task you will need to figure out where in the source code to add your accessibility labels. Hint: A good starting point is to look where other screen elements are being styled/initialized
+
+Once you have added accessibility labels you can confirm your additions by using the accessibility inspector. Use some new KIF functions in order to select specific rows in the table view, and to enter text into your text field.
