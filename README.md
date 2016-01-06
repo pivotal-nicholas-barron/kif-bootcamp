@@ -16,7 +16,7 @@ Software:
 
 ## Task #0: Setup
 
-##### Useful  material and links: 
+##### Useful material and links: 
 
 - [Objective-C Basics] (http://tryobjectivec.codeschool.com/levels/1)
 - [Xcode Cheat Sheet] (http://www.git-tower.com/blog/xcode-cheat-sheet)
@@ -38,7 +38,7 @@ In order to complete this task you will need to create your first test class and
 
 ## Task #1: Exploring the KIF API
 
-##### Useful  material and links: 
+##### Useful material and links: 
 
 - [iOS Accessibility Inspector] (https://developer.apple.com/library/ios/technotes/TestingAccessibilityOfiOSApps/TestAccessibilityiniOSSimulatorwithAccessibilityInspector/TestAccessibilityiniOSSimulatorwithAccessibilityInspector.html) 
 - [KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
@@ -52,7 +52,7 @@ In order to complete this task you will need to create a new test class, and wri
 
 ## Task #2: Adding accessibility labels
 
-##### Useful  material and links: 
+##### Useful material and links: 
 
 - [KIF Tests - Source code examples] (https://github.com/kif-framework/KIF/tree/master/KIF%20Tests)
 
@@ -66,3 +66,35 @@ In order to complete this task you will need to create a new test class, and wri
 In order to complete this task you will need to figure out where in the source code to add your accessibility labels. Hint: A good starting point is to look where other screen elements are being styled/initialized
 
 Once you have added accessibility labels you can confirm your additions by using the accessibility inspector. Use some new KIF functions in order to select specific rows in the table view, and to enter text into your text field.
+
+## Task #3: Before and After your tests
+
+##### Useful material and links: 
+
+- [KIFTestCase.h] (https://github.com/kif-framework/KIF/blob/master/Classes/KIFTestCase.h)
+
+##### Objective:
+1. Experiment with the beforeAll, beforeEach, afterEach, and afterAll methods
+
+##### Description:
+
+Get used to using these methods to peform tasks at different points in your code between tests.
+
+In order to complete this task, create a test class with several tests in it and utilize NSLog to print out debug output showing the use of each function. Perform actual test steps in these methods to set up, and reset state in between your tests.
+
+## Task #4: Stubbing network requests
+
+##### Useful material and links: 
+
+- [Nocilla] (https://github.com/luisobo/Nocilla)
+- [Charles Proxy on the iOS Simulator] (https://www.charlesproxy.com/documentation/faqs/ssl-connections-from-within-iphone-applications/)
+
+##### Objective:
+1. Install Nocilla on the bootcamp app
+2. Use Nocilla to stub the network request being used to fetch ETT Pivots and give them new job titles
+
+##### Description:
+
+Get used to Nocilla and all the different ways you can stub network requests. You can use Charles Proxy to intercept the content of the network calls from the app, and edit it for your stub.
+
+In order to complete this task, create a test class that makes use of Nocilla to stub new values in for ETT Pivots.
