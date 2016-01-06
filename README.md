@@ -48,7 +48,7 @@ Add a test that selects a Pivot from the table view, and makes sure their job ti
 
 ##### Description:
 
-In order to complete this task you will need to create a new test class, and write a test that combines two of the core functions of KIF, waiting for a view to be visible, and tapping on a view.
+In order to complete this task you will need to create a new test class, and write a test that combines two of the core functions of KIF; waiting for a view to be visible and tapping on a view.
 
 ## Task #2: Adding accessibility labels
 
