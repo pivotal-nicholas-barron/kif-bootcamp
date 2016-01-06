@@ -6,10 +6,10 @@ Fork this repo and request evaluation from ETT members experienced in developing
 
 Software:
 
-- Xcode 7.x.x (Try to remain consistent with the version that the development team is using)
-- Cocoapods
-- KIF
-- Nocilla
+    Xcode 7.x.x (Try to remain consistent with the version that the development team is using)
+    Cocoapods
+    KIF
+    Nocilla
 
 
 #KIF Basics
