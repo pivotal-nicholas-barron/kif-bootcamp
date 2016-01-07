@@ -6,10 +6,10 @@ Fork this repo and request evaluation from ETT members experienced in developing
 
 Software:
 
-    Xcode 7.x.x (Try to remain consistent with the version that the development team is using)
-    Cocoapods
-    KIF
-    Nocilla
+- Xcode 7.x.x (Try to remain consistent with the version that the development team is using)
+- Cocoapods
+- KIF
+- Nocilla
 
 
 #KIF Basics
@@ -97,4 +97,14 @@ In order to complete this task, create a test class with several tests in it and
 
 Get used to Nocilla and all the different ways you can stub network requests. You can use Charles Proxy to intercept the content of the network calls from the app, and edit it for your stub.
 
-In order to complete this task, create a test class that makes use of Nocilla to stub new values in for ETT Pivots.
+In order to complete this task, create a test class that makes use of Nocilla to stub new values in for ETT Pivots, and verifies them using the skills you've learned up until this point.
+
+## Task #5: References to objects and using their functions
+
+##### Objective:
+1. Add tests that utilize reference to existing objects and use their methods
+
+##### Description:
+You can get a pointer to the original object simply by casting your waits to the desired object (e.g. (UIView *)[tester waitForViewWithAccessibilityLabel:@"SomeView"]). You can assign this to a variable and then manipulate the object directly using its methods. 
+
+In order to complete this task, get a reference to the tableView object, and initiate a selection directly using the delegate method tableView:didSelectRowAtIndexPath:.
