@@ -99,7 +99,7 @@ Get used to Nocilla and all the different ways you can stub network requests. Yo
 
 In order to complete this task, create a test class that makes use of Nocilla to stub new values in for ETT Pivots, and verifies them using the skills you've learned up until this point.
 
-## Task #5: References to objects and using their functions
+## Task #5: References to objects and using their methods
 
 ##### Objective:
 1. Add tests that utilize reference to existing objects and use their methods
