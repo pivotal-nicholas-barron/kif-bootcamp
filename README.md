@@ -32,8 +32,9 @@ Software:
 
 If you are new to Objective-C, I would recommend running through the Objective-C Basics course on Codeschool. It's a quick and gamified way to familiarize yourself with the basics of Objective-C syntax. If you are familiar with Java/C most of the underlying concepts should not be new to you.
 
-Follow the installation instructions from the KIF Framework README **NOTE:** You should add your test target in the xcodeproj file, and then open xcworkspace only after you have installed the pod. Additionally to run the project on a simulator below 9.1, you will have to change "Deployment Target" to something lower (e.g. 8.0). We will be using Cocoapods to install KIF, so make sure you have the latest stable version installed on your machine. 
+Follow the installation instructions from the KIF Framework README. We will be using Cocoapods to install KIF, so make sure you have the latest stable version installed on your machine. 
 
+ **NOTE:** You should add your test target in the xcodeproj file, and then open xcworkspace only after you have installed the pod. Additionally to run the project on a simulator below 9.1, you will have to change "Deployment Target" to something lower (e.g. 8.0)
 
 
 In order to complete this task you will need to create your first test class and write a simple test.
