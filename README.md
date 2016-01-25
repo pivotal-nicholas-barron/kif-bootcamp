@@ -70,7 +70,18 @@ In order to complete this task you will need to figure out where in the source c
 
 Once you have added accessibility labels you can confirm your additions by using the accessibility inspector. Use some new KIF functions in order to select specific rows in the table view, and to enter text into your text field.
 
-## Task #3: Before and After your tests
+## Task #3: References to objects and using their methods
+
+##### Objective:
+1. Add tests that utilize reference to existing objects and use their methods
+
+##### Description:
+You can get a pointer to the original object simply by casting your waits to the desired object (e.g. (UIView *)[tester waitForViewWithAccessibilityLabel:@"SomeView"]). You can assign this to a variable and then manipulate the object directly using its methods. 
+
+In order to complete this task, get a reference to the tableView object, and initiate a selection directly using the delegate method tableView:didSelectRowAtIndexPath:.
+
+
+## Task #4: Before and After your tests
 
 ##### Useful material and links: 
 
@@ -85,7 +96,7 @@ Get used to using these methods to peform tasks at different points in your code
 
 In order to complete this task, create a test class with several tests in it and utilize NSLog to print out debug output showing the use of each function. Perform actual test steps in these methods to set up, and reset state in between your tests.
 
-## Task #4: Stubbing network requests
+## Task #5: Stubbing network requests
 
 ##### Useful material and links: 
 
@@ -101,13 +112,3 @@ In order to complete this task, create a test class with several tests in it and
 Get used to Nocilla and all the different ways you can stub network requests. You can use Charles Proxy to intercept the content of the network calls from the app, and edit it for your stub.
 
 In order to complete this task, create a test class that makes use of Nocilla to stub new values in for ETT Pivots, and verifies them using the skills you've learned up until this point.
-
-## Task #5: References to objects and using their methods
-
-##### Objective:
-1. Add tests that utilize reference to existing objects and use their methods
-
-##### Description:
-You can get a pointer to the original object simply by casting your waits to the desired object (e.g. (UIView *)[tester waitForViewWithAccessibilityLabel:@"SomeView"]). You can assign this to a variable and then manipulate the object directly using its methods. 
-
-In order to complete this task, get a reference to the tableView object, and initiate a selection directly using the delegate method tableView:didSelectRowAtIndexPath:.
