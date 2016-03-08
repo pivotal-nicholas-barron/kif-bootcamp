@@ -1,8 +1,12 @@
- platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
 
 target 'KIFBootcamp' do
+   pod 'Parse'
+end
 
-pod 'Parse'
-
+target 'KIFBootcampTests', :exclusive => true do
+   pod 'KIF', '~>3.0'
 end
 
