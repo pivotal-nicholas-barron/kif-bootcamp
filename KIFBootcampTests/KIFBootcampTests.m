@@ -20,8 +20,23 @@
 - (void)afterEach {
 }
 
-- (void)testExample {
-    [tester waitForTimeInterval:10];
+- (void)test01_whenAPivotIsSelected_thenTitleAndNumProjectsIsShown {
+    [tester tapViewWithAccessibilityLabel:@"Nicholas Barron"];
+    [tester waitForViewWithAccessibilityLabel:@"New Hire"];
+    [tester waitForViewWithAccessibilityLabel:@"0"];
+}
+
+- (void)test02_whenEachPivotIsSelectedAndCommentsAreAdded_thenSuccessDialogsAreShown {
+    UINavigationItem *pivotPageNavItem = (UINavigationItem*)[tester waitForViewWithAccessibilityLabel:@"ETT Pivots Page"];
+    UITableView *table = (UITableView*)[tester waitForViewWithAccessibilityLabel:@"Test label"];
+    for(NSIndexPath *cellPath in table.indexPathsForVisibleRows){
+        [tester tapRowAtIndexPath:cellPath inTableView:table];
+        [tester enterText:@"Test" intoViewWithAccessibilityLabel:@"Comment Field"];
+        [tester tapViewWithAccessibilityLabel:@"Submit Button"];
+        [tester waitForViewWithAccessibilityLabel:@"Comment Added"];
+        [tester tapViewWithAccessibilityLabel:@"OK"];
+        [tester tapViewWithAccessibilityLabel:pivotPageNavItem.title];
+    }
 }
 
 @end
