@@ -8,5 +8,6 @@ end
 
 target 'KIFBootcampTests', :exclusive => true do
    pod 'KIF', '~>3.0'
+   pod 'Nocilla'
 end
 

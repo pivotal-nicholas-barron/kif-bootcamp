@@ -10,33 +10,57 @@
 
 @interface KIFBootcampTests : KIFTestCase
 
+
+
 @end
 
 @implementation KIFBootcampTests
 
+- (void)beforeAll {
+    NSLog(@"Starting app, creating static variables and running tests...");
+}
+
+- (void) afterAll {
+    NSLog(@"Tests finished.");
+}
+
 - (void)beforeEach {
-    }
+    NSLog(@"Starting test");
+}
 
 - (void)afterEach {
+    if([tester tryFindingViewWithAccessibilityLabel:@"DETAILS" error:noErr]){
+        NSLog(@"On Details page, navigating back to home...");
+        [tester tapViewWithAccessibilityLabel:@"Navigation"];
+    }
 }
 
 - (void)test01_whenAPivotIsSelected_thenTitleAndNumProjectsIsShown {
     [tester tapViewWithAccessibilityLabel:@"Nicholas Barron"];
-    [tester waitForViewWithAccessibilityLabel:@"New Hire"];
+    
+    //Job Accessibility label updated for later task
+    //[tester waitForViewWithAccessibilityLabel:@"New Hire"];
+    [tester waitForViewWithAccessibilityLabel:@"Job Label"];
+    
     [tester waitForViewWithAccessibilityLabel:@"0"];
 }
 
 - (void)test02_whenEachPivotIsSelectedAndCommentsAreAdded_thenSuccessDialogsAreShown {
-    UINavigationItem *pivotPageNavItem = (UINavigationItem*)[tester waitForViewWithAccessibilityLabel:@"ETT Pivots Page"];
-    UITableView *table = (UITableView*)[tester waitForViewWithAccessibilityLabel:@"Test label"];
+    UITableView *table = (UITableView*)[tester waitForViewWithAccessibilityLabel:@"Pivot Table"];
     for(NSIndexPath *cellPath in table.indexPathsForVisibleRows){
         [tester tapRowAtIndexPath:cellPath inTableView:table];
         [tester enterText:@"Test" intoViewWithAccessibilityLabel:@"Comment Field"];
         [tester tapViewWithAccessibilityLabel:@"Submit Button"];
         [tester waitForViewWithAccessibilityLabel:@"Comment Added"];
         [tester tapViewWithAccessibilityLabel:@"OK"];
-        [tester tapViewWithAccessibilityLabel:pivotPageNavItem.title];
+        [tester tapViewWithAccessibilityLabel:@"Navigation"];
     }
+}
+
+- (void)test03_whenPivotIsSelectedUsingObjectMethods_thenDetailsPageIsOpened {
+    UITableView *table = (UITableView*)[tester waitForViewWithAccessibilityLabel:@"Pivot Table"];
+    [tester tapRowAtIndexPath:[NSIndexPath indexPathForRow:-1 inSection:-1] inTableView:table];
+    [tester waitForViewWithAccessibilityLabel:@"DETAILS"];
 }
 
 @end
