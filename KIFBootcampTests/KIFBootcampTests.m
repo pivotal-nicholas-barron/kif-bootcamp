@@ -7,6 +7,7 @@
 //
 
 #import <KIF/KIF.h>
+#import "Nocilla.h"
 
 @interface KIFBootcampTests : KIFTestCase
 
@@ -18,10 +19,15 @@
 
 - (void)beforeAll {
     NSLog(@"Starting app, creating static variables and running tests...");
+    [[LSNocilla sharedInstance] start];
+    [self changeNetworkRequest];
 }
 
 - (void) afterAll {
-    NSLog(@"Tests finished.");
+    NSLog(@"Tests finished. Stopping Nocilla...");
+    [[LSNocilla sharedInstance] clearStubs];
+    [[LSNocilla sharedInstance] stop];
+    NSLog(@"Nocilla stopped.");
 }
 
 - (void)beforeEach {
@@ -63,4 +69,8 @@
     [tester waitForViewWithAccessibilityLabel:@"DETAILS"];
 }
 
+- (void)changeNetworkRequest {
+    //Test with 500 for KIFBootcamp
+    stubRequest(@"GET", @"https://api.parse.com").andReturn(500);
+}
 @end
