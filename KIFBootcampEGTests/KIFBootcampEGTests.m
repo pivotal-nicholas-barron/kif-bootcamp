@@ -6,6 +6,7 @@
 //  Copyright © 2016 PIvotal Labs. All rights reserved.
 //
 
+@import EarlGrey;
 #import <XCTest/XCTest.h>
 
 @interface KIFBootcampEGTests : XCTestCase
@@ -16,7 +17,7 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
@@ -25,15 +26,10 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    id<GREYMatcher> PivotListMatcher = grey_allOf(grey_accessibilityLabel(@"Nicholas Barron"), nil);
+    id<GREYMatcher> PivotDetailMatcher = grey_allOf(grey_accessibilityLabel(@"Name Label"), nil);
+    [[EarlGrey selectElementWithMatcher:PivotListMatcher] performAction:grey_tap()];
+    [[EarlGrey selectElementWithMatcher:PivotDetailMatcher]assertWithMatcher:grey_sufficientlyVisible()];
 }
 
 @end
